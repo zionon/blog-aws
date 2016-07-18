@@ -27,7 +27,7 @@ $fileName = iconv('UTF-8', 'GB2312', $fileName);
 $filePath = $targetDir . DIRECTORY_SEPARATOR . $fileName;
 $uploadPath = $uploadDir . DIRECTORY_SEPARATOR . $fileName;
 
-$imgUrl="http://www.blog.com/public/wangEditor-2.1.13/uploadfiles/".$uploadDir."/".$fileName;
+$imgUrl="http://ec2-52-77-214-37.ap-southeast-1.compute.amazonaws.com/public/wangEditor-2.1.13/uploadfiles/".$uploadDir."/".$fileName;
 echo $imgUrl;
 
 $chunk = isset($_REQUEST["chunk"]) ? intval($_REQUEST["chunk"]) : 0;
