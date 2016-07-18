@@ -1,7 +1,8 @@
 <?php
 
+$time = date('Y-m-d');
 $targetDir = 'temp';
-$uploadDir = 'upload';
+$uploadDir = 'upload' . DIRECTORY_SEPARATOR . $time;
 $maxFileAge = 100;
 
 $cleanupTargetDir = true; 
@@ -25,12 +26,6 @@ if (isset($_REQUEST["name"])) {
 $fileName = iconv('UTF-8', 'GB2312', $fileName);
 $filePath = $targetDir . DIRECTORY_SEPARATOR . $fileName;
 $uploadPath = $uploadDir . DIRECTORY_SEPARATOR . $fileName;
-// var_dump($_REQUEST);
-// var_dump($_FILES);
-// var_dump($fileName);
-// var_dump($filePath);
-// var_dump($uploadPath);die;
-
 
 $imgUrl="http://www.blog.com/public/wangEditor-2.1.13/uploadfiles/".$uploadDir."/".$fileName;
 echo $imgUrl;
