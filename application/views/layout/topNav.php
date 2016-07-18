@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-param" content="_csrf">
-    <title>文章管理</title>
+    <title>小型博文系统</title>
     <link href="<?=_PUBLIC?>/css/bootstrap.css" rel="stylesheet">
 	<link href="<?=_PUBLIC?>/css/site.css" rel="stylesheet">    
 	<style type="text/css">
