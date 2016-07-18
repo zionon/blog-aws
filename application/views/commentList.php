@@ -41,7 +41,6 @@
 								<option value="2" <?php if($status == 2) echo 'selected="selected"'; ?> >已审核</option>
 								</select>
 							</td>
-<!-- 							<td><input type="text" name="CommentSearch[update_time]" class="form-control" value="<?=$this->input->get('CommentSearch[update_time]')?>"></td> -->
 							<td>&nbsp;</td>
 							<td>&nbsp;</td>
 							<td>&nbsp;</td>
@@ -75,7 +74,6 @@
 					<input type="submit" value="确定审核"  class="comment_btn btn btn-success" data-confirm="确定要审核吗?" />
 				</div>
 			</form>
-				<!-- <input type="button" value="提交评论"  class="comment_btn btn btn-success" />	    -->
 				<ul class="pagination">
 					<?=$page?>
 				</ul>
@@ -87,7 +85,7 @@
 <?php $this->load->view('layout/foot'); ?>
 <script type="text/javascript">
 	jQuery(document).ready(function () {
-		jQuery('#w0').yiiGridView({"filterUrl":"\/index.php\/comment\/commentList?","filterSelector":"#w0-filters input, #w0-filters select"});
+		jQuery('#w0').yiiGridView({"filterUrl":"\/comment\/commentList?","filterSelector":"#w0-filters input, #w0-filters select"});
 	});
-	//抽时间要理解get上面url乱码
+	//抽时间要理解get上面url
 </script>

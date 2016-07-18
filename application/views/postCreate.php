@@ -33,8 +33,6 @@
 
 				<div class="form-group field-post-content required">
 					<label class="control-label" for="post-content">内容</label>
-					<!-- <textarea id="post-content" class="form-control" name="Post[content]" rows="6"><?=set_value('Post[content]')?></textarea> -->
-					<!-- <textarea id="editor" name="Post[content]" placeholder="Hello world" autofocus></textarea> -->
 					<textarea id="textarea1" name="Post[content]" style="height: 400px">
 						<p>Hello World....</p>
 					</textarea>
@@ -72,16 +70,6 @@
 
 </div>
 <?php $this->load->view('layout/foot'); ?>
-<!-- <link rel="stylesheet" type="text/css" href="<?=_PUBLIC?>/simditor-2.3.6/styles/simditor.css" />
-<script type="text/javascript" src="<?=_PUBLIC?>/simditor-2.3.6/scripts/module.js"></script>
-<script type="text/javascript" src="<?=_PUBLIC?>/simditor-2.3.6/scripts/hotkeys.js"></script>
-<script type="text/javascript" src="<?=_PUBLIC?>/simditor-2.3.6/scripts/uploader.js"></script>
-<script type="text/javascript" src="<?=_PUBLIC?>/simditor-2.3.6/scripts/simditor.js"></script>
-<script type="text/javascript">
-	var editor = new Simditor({
-		textarea: $('#editor')
-	});
-</script> -->
 
 <!--引入wangEditor.css-->
 <link rel="stylesheet" type="text/css" href="<?=_PUBLIC?>/wangEditor-2.1.13/dist/css/wangEditor.min.css">

@@ -85,7 +85,7 @@
 <?php $this->load->view('layout/foot'); ?>
 <script type="text/javascript">
 	jQuery(document).ready(function () {
-		jQuery('#w0').yiiGridView({"filterUrl":"\/index.php\/reply\/replyList?","filterSelector":"#w0-filters input, #w0-filters select"});
+		jQuery('#w0').yiiGridView({"filterUrl":"\/reply\/replyList?","filterSelector":"#w0-filters input, #w0-filters select"});
 	});
-	//抽时间要理解get上面url乱码
+	//抽时间要理解get上面url
 </script>
