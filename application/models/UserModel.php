@@ -6,7 +6,7 @@ class UserModel extends MY_Model
 	protected $_insertFields = array('username','password','email');
 	protected $_updateFields = array('username','password','email');
 
-	public function search($perpage = 2) {
+	public function search($perpage = 5) {
 		//要操作的表
 		$this->db->from($this->_tableName);
 		//查询的id

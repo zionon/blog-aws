@@ -39,7 +39,7 @@
 						<tr id="w0-filters" class="filters">
 							<td><input type="text" class="form-control" name="PostSearch[id]" value="<?=$this->input->get('PostSearch[id]')?>"></td>
 							<td><input type="text" class="form-control" name="PostSearch[title]" value="<?=$this->input->get('PostSearch[title]')?>"></td>
-							<td><input type="text" class="form-control" name="PostSearch[content]" value="<?=$this->input->get('PostSearch[author_id]')?>"></td>
+							<td><input type="text" class="form-control" name="PostSearch[author_id]" value="<?=$this->input->get('PostSearch[author_id]')?>"></td>
 							<td><input type="" name="" class="form-control"></td>
 							<td><input type="text" name="PostSearch[tags]" class="form-control" value="<?=$this->input->get('PostSearch[tags]')?>"></td>
 							<td>
@@ -65,6 +65,8 @@
 								<option value="3" <?php if($status == 3) echo 'selected="selected"'; ?> >已归档</option>
 								</select>
 							</td>
+							<td>&nbsp;</td>
+							<td>&nbsp;</td>
 						</tr>
 					</thead>
 					<tbody>

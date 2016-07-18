@@ -51,7 +51,7 @@ class MY_Model extends CI_Model
 			}
 		}
 		//更新数据库
-		$ret = $this->db->update($this->_tableName,$data);
+		$ret = $this->db->update(strtolower($this->_tableName),$data);
 		//更新后的钩子函数
 		if (method_exists($this,'_after_update')) {
 			$this->_after_update($data);

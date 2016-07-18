@@ -217,7 +217,7 @@ class PostModel extends MY_Model
 		$data = array();
 		$this->_tableName = ucfirst($this->_tableName);
 		$this->db->where('id',$this->input->post("$this->_tableName[id]"));
-		$oldTags = $this->db->select('tags')->get($this->_tableName);
+		$oldTags = $this->db->select('tags')->get(strtolower($this->_tableName));
 		$oldTags = $oldTags->result()[0]->tags;
 		$oldTags = explode(',', $oldTags);
 		// var_dump($oldTags);die();
@@ -232,7 +232,7 @@ class PostModel extends MY_Model
 		}
 		//更新数据库
 		$this->db->where('id', $this->input->post("$this->_tableName[id]"));
-		$ret = $this->db->update($this->_tableName,$data);
+		$ret = $this->db->update(strtolower($this->_tableName),$data);
 		//更新后的钩子函数
 		$newTags = array_diff(explode(',', $data['tags']), $oldTags);
 		// var_dump($newTags);die;
