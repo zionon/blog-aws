@@ -54,4 +54,14 @@ class PostController extends MY_Controller
 		$data = $this->pm->find($id);
 		$this->load->view('postDetail', $data);
 	}
+
+	//日志图片上传
+	public function uploadImage() {
+		//载入上传类
+		$this->load->library('upload');
+		$this->upload->do_upload('file');
+		$access_path = $this->upload->data('access_path');
+		$baseurl = site_url();
+		echo $baseurl . $access_path . DIRECTORY_SEPARATOR . $this->upload->data('file_name');
+	}
 }

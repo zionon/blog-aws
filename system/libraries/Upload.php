@@ -49,6 +49,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class CI_Upload {
 
 	/**
+	 * Access_path
+	 *
+	 * @var string
+	 */
+	public $access_path = '';
+	/**
 	 * Maximum file size
 	 *
 	 * @var	int
@@ -611,6 +617,7 @@ class CI_Upload {
 				'image_height'		=> $this->image_height,
 				'image_type'		=> $this->image_type,
 				'image_size_str'	=> $this->image_size_str,
+				'access_path'	=> $this->access_path,
 			);
 
 		if ( ! empty($index))

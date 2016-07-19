@@ -2,7 +2,7 @@
 class PostModel extends MY_Model
 {
 	protected $_tableName = 'post';
-	protected $_insertFields = array('title','status','tags','cat_id');
+	protected $_insertFields = array('title','tags','cat_id');
 	protected $_updateFields = array('title','content','status','tags','cat_id');
 
 	public function search($perpage = 10) {
