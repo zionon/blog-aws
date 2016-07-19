@@ -27,6 +27,9 @@ error/*
 *.sublime-workspace
 *.sublime-project
 
+##uploadImage
+public/upload/*
+
 ##Capistrano
 config/*
 lib/*

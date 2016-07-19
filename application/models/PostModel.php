@@ -2,7 +2,7 @@
 class PostModel extends MY_Model
 {
 	protected $_tableName = 'post';
-	protected $_insertFields = array('title','content','status','tags','cat_id');
+	protected $_insertFields = array('title','status','tags','cat_id');
 	protected $_updateFields = array('title','content','status','tags','cat_id');
 
 	public function search($perpage = 10) {
@@ -247,6 +247,7 @@ class PostModel extends MY_Model
 		$data['update_time'] = time();
 		$data['author_id'] = '1';
 		$data['tags'] = str_replace('，', ',', $data['tags']);
+		$data['content'] = $this->input->post('Post[content]');
 		if ($data['create_time'] == $data['update_time']) {
 			return TRUE;
 		} else{
