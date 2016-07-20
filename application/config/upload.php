@@ -1,6 +1,6 @@
 <?php
 	$date = date('Y-m-d');
-	$access_path = _PUBLIC . '/upload/' . $date;
+	$access_path = 'public/upload/' . $date;
 	$upload_path = FCPATH . $access_path; 
 	if (!file_exists($upload_path)) {
 		@mkdir($upload_path);
