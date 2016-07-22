@@ -147,6 +147,8 @@ class WelcomeController extends CI_Controller {
 
 	//ajax获取tag标签日志
 	public function ajaxGetTagPost() {
+		$this->load->model('TagModel', 'tm');
+		$this->tm->addFrequency($this->input->get('PostSearch[id]'));
 		$this->load->model('PostModel', 'pm');
 		$data = $this->pm->getPost('ajaxGetTagPost');
 		$this->load->model('CommentModel', 'cm');

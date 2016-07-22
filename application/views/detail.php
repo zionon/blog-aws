@@ -23,8 +23,9 @@
 					</div>
 					<br />					
 					<div class="nav">
-						<span class="glyphicon glyphicon-tag" aria-hidden="true"></span> 
-						<a href=""><?=$tags?></a>			
+						<?php foreach($contenttags as $value): ?>
+							<span class="glyphicon glyphicon-tag" aria-hidden="true"><?=$value?></span>
+						<?php endforeach; ?>		
 						<br/>
 						<a href="">评论 (<?=$num?>)</a> |
 						最后修改于 <?=date('Y-m-d H:i:s', $update_time)?>	

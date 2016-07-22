@@ -210,6 +210,7 @@ class PostModel extends MY_Model
 		$this->db->join('category','post.cat_id=category.id','left');
 		$data = $this->db->get();
 		$data = $data->result('array');
+		$data[0]['contenttags'] = explode(',', $data[0]['tags']);
 		return $data[0];
 	}
 
